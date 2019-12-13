@@ -4,10 +4,10 @@ import './NavButton.styles.scss';
 
 export default function NavButton({ title, linkPath }) {
 	return (
-		<div className='NavButton from-left'>
-			<Link to={linkPath}>
+		<Link to={linkPath}>
+			<div className='NavButton from-left'>
 				<span>{title}</span>
-			</Link>
-		</div>
+			</div>
+		</Link>
 	);
 }

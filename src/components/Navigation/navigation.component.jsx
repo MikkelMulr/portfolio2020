@@ -7,7 +7,7 @@ export default function Navigation({ changeView }) {
 		<div className='Navigation'>
 			<NavButton title='HOME' linkPath='/' />
 			<NavButton title='PROJECTS' linkPath='Projects' />
-			<NavButton title='ABOUT' linkPath='/' />
+			<NavButton title='ABOUT' linkPath='/About' />
 			<NavButton title='CONTACT' linkPath='/' />
 		</div>
 	);

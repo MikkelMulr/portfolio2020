@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
+import ProjectCard from '../components/ProjectCard/ProjectCard.component';
 import './projects.styles.scss';
 
-export class projects extends Component {
+export class Projects extends Component {
+	constructor(props) {
+		super(props);
+	}
+
 	render() {
 		return (
 			<div className='Projects'>
-				<h2>Projects</h2>
+				<div className='Projects--Cards'>
+					<ProjectCard title='Subtrack' order='one' />
+					<ProjectCard title='Avalon Resilient' order='two' />
+					<ProjectCard title='OVBG PathFinder' order='three' />
+				</div>
 			</div>
 		);
 	}
 }
 
-export default projects;
+export default Projects;

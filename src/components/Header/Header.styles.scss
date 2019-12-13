@@ -1,0 +1,25 @@
+.Header {
+	width: 100vw;
+	height: 6vh;
+	padding: 1rem 4rem;
+	position: fixed;
+	align-self: flex-start;
+}
+
+.Logo {
+	font-family: 'Nanum Gothic', sans-serif;
+	display: flex;
+	flex-direction: column;
+
+	&--top {
+		color: #333;
+		letter-spacing: 1.1rem;
+		font-size: 2rem;
+	}
+
+	&--bottom {
+		color: #fff;
+		letter-spacing: 1rem;
+		font-size: 1.6rem;
+	}
+}

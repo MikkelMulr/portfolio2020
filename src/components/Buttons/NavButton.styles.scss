@@ -1,0 +1,61 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+// Credit to Eric Grucza (https://codepen.io/egrucza/pen/NqVrzq) for inspiring the hover effects
+.NavButton {
+	color: white;
+	padding: 30px 80px;
+	text-transform: uppercase;
+	letter-spacing: 1.1rem;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+
+	span {
+		position: relative;
+		z-index: 100;
+		color: #fff;
+		transition: 1.2s ease-in;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	&:before {
+		transform: translate3d(-100%, 0, 0);
+		background-color: white;
+		border: 1px solid white;
+		transition: transform 3s ease-in;
+	}
+
+	&:after {
+		background-color: #fff;
+		transform: translate3d(100%, 0, 0);
+		transition: transform 300ms 300ms cubic-bezier(.16, .73, .58, .62);
+	}
+
+	&:hover {
+		&:before {
+			transform: translate3d(0, 0, 0);
+		}
+
+		&:after {
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	&:hover span {
+		color: #000;
+	}
+}

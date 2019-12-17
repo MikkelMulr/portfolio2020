@@ -1,8 +1,44 @@
+// @custom-media --viewport-4 (min-width: 480px);
+// @custom-media --viewport-7 (min-width: 768px);
+// @custom-media --viewport-9 (min-width: 992px);
+// @custom-media --viewport-12 (min-width: 1200px);
+
 .Navigation {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 300px;
-	height: 52vh;
+	height: 100vh;
 	align-self: flex-end;
+	background: linear-gradient(180deg, rgba(23, 23, 23, 1) 0%, rgb(31, 31, 31) 100%);
+	z-index: 10000;
+	position: absolute;
+	left: 0;
+	animation: showNav 0.8s ease-out;
+	box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 1200px) {
+	.Navigation {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 300px;
+		height: 52vh;
+		align-self: flex-end;
+		background: none;
+		position: relative;
+		animation: none;
+		box-shadow: none;
+	}
+}
+
+@keyframes showNav {
+	0% {
+		transform: translateX(-500px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
 }

@@ -1,9 +1,22 @@
 .Header {
 	width: 100vw;
 	height: 6vh;
-	padding: 1rem 4rem;
+	padding: 1rem 1rem;
 	position: fixed;
 	align-self: flex-start;
+	display: flex;
+	flex-direction: row;
+
+	img {
+		height: 50px;
+		width: 50px;
+		margin-right: 0.5rem;
+	}
+
+	img:hover {
+		cursor: pointer;
+		transform: scale(1.1);
+	}
 }
 
 .Logo {
@@ -18,8 +31,36 @@
 	}
 
 	&--bottom {
-		color: #fff;
+		color: #999;
 		letter-spacing: 1rem;
-		font-size: 1.6rem;
+		font-size: 1.1rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.Header {
+		width: 100vw;
+		height: 6vh;
+		padding: 1rem 4rem;
+		position: fixed;
+		align-self: flex-start;
+	}
+
+	.Logo {
+		font-family: 'Nanum Gothic', sans-serif;
+		display: flex;
+		flex-direction: column;
+
+		&--top {
+			color: #333;
+			letter-spacing: 1.1rem;
+			font-size: 2rem;
+		}
+
+		&--bottom {
+			color: #fff;
+			letter-spacing: 1rem;
+			font-size: 1.6rem;
+		}
 	}
 }

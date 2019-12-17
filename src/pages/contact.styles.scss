@@ -1,20 +1,167 @@
 .Contact {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-  animation: appear 1.2s ease-out;
-  overflow: hidden;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	animation: appear 1.2s ease-out;
+	overflow: hidden;
+	padding: 0;
+
+	&--items {
+		padding: 1rem;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-end;
+
+		.item1 {
+			padding-top: 0;
+			animation: appear 1.2s ease-out;
+
+			h2 {
+				animation: growText 2.25s ease-out;
+			}
+		}
+
+		.item2 {
+			padding-top: 0;
+			animation: appear 1.6s ease-out;
+			h2 {
+				animation: growText 2.75s ease-out;
+			}
+		}
+
+		.item3 {
+			padding-top: 0;
+			animation: appear 2s ease-out;
+			h2 {
+				animation: growText 3.25s ease-out;
+			}
+		}
+	}
+
+	&--item {
+		padding: 1rem;
+		display: flex;
+		flex-direction: row;
+
+		h2 {
+			color: #999;
+			height: 1.5rem;
+		}
+	}
+
+	&--item img {
+		width: 5rem;
+		height: 5rem;
+		transition: 0.3s ease-in;
+
+		&:hover {
+			transform: scale(1.1);
+			cursor: pointer;
+		}
+	}
 }
 
 @keyframes appear {
-  0% {
-    transform: translateY(800px) scale(2);
-  }
+	0% {
+		transform: translateY(800px) scale(2);
+	}
 
-  100% {
-    transform: translateY(0) scale(1);
-  }
+	100% {
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes growText {
+	0% {
+		transform: translateX(100px);
+		opacity: 0;
+		color: #fff;
+	}
+
+	50% {
+		transform: translateX(100px);
+		opacity: 0;
+		color: #fff;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+		color: #999;
+	}
+}
+
+@media (min-width: 1200px) {
+	.Contact {
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: flex-end;
+		overflow: hidden;
+		color: #fff;
+		padding: 0 5rem;
+
+		&--items {
+			padding: 2rem;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: flex-start;
+
+			.item1 {
+				padding-top: 1rem;
+				animation: appear 1.2s ease-out;
+
+				h2 {
+					animation: growText 2.25s ease-out;
+				}
+			}
+
+			.item2 {
+				padding-top: 10rem;
+				animation: appear 1.6s ease-out;
+				h2 {
+					animation: growText 2.75s ease-out;
+				}
+			}
+
+			.item3 {
+				padding-top: 20rem;
+				animation: appear 2s ease-out;
+				h2 {
+					animation: growText 3.25s ease-out;
+				}
+			}
+		}
+
+		&--item {
+			padding: 1rem;
+			display: flex;
+			flex-direction: row;
+
+			h2 {
+				color: #999;
+				height: 2rem;
+			}
+		}
+
+		&--item img {
+			width: 10rem;
+			height: 10rem;
+			transition: 0.3s ease-in;
+
+			&:hover {
+				transform: scale(1.1);
+				cursor: pointer;
+			}
+		}
+	}
 }

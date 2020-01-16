@@ -8,9 +8,9 @@ export class Projects extends Component {
 		return (
 			<div className='Projects'>
 				<div className='Projects--Cards'>
-					<ProjectCard title='Subtrack' order='one' />
-					<ProjectCard title='Avalon Resilient' order='two' />
-					<ProjectCard title='OVBG PathFinder' order='three' />
+					<ProjectCard title='Project' order='one' />
+					<ProjectCard title='Project' order='two' />
+					<ProjectCard title='Project' order='three' />
 				</div>
 			</div>
 		);

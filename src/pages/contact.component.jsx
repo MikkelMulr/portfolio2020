@@ -13,11 +13,11 @@ export default function Contact() {
 					<h2>EMAIL</h2>
 				</div>
 				<div className='Contact--item item2'>
-					<a href="https://github.com/MikkelMulr"><img src={Github} alt='github' /></a>
+					<a href="https://github.com/MikkelMulr" target="_blank"><img src={Github} alt='github' /></a>
 					<h2>GITHUB</h2>
 				</div>
 				<div className='Contact--item item3'>
-					<a href="https://www.linkedin.com/in/michael-mueller-10a092161/"><img src={Linkedin} alt='linkedin' /></a>
+					<a href="https://www.linkedin.com/in/michael-mueller-10a092161/" target="_blank"><img src={Linkedin} alt='linkedin' /></a>
 					<h2>LINKEDIN</h2>
 				</div>
 			</div>

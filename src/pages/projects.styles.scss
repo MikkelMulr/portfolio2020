@@ -29,7 +29,7 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
 	.Projects {
 		height: 100vh;
 		width: 100%;
@@ -61,6 +61,7 @@
 		}
 	}
 }
+
 @keyframes appear {
 	0% {
 		opacity: 0;

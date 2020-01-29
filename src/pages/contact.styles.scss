@@ -51,15 +51,20 @@
 		flex-direction: row;
 
 		h2 {
-			color: #999;
-			height: 1.5rem;
+			padding: 1rem;
+			color: #a3b1c6;
+			height: 1.15rem;
 		}
 	}
 
 	&--item img {
+		padding: 1rem;
 		width: 5rem;
 		height: 5rem;
 		transition: 0.3s ease-in;
+		box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 16px #a3b1c6;
+		border-radius: 50%;
+		background-color: #d5d9df;
 
 		&:hover {
 			transform: scale(1.1);
@@ -94,7 +99,7 @@
 	100% {
 		transform: translateX(0);
 		opacity: 1;
-		color: #999;
+		color: #a3b1c6;
 	}
 }
 
@@ -152,15 +157,20 @@
 			flex-direction: row;
 
 			h2 {
-				color: #999;
+				color: #a3b1c6;
 				height: 2rem;
 			}
 		}
 
 		&--item img {
+			padding: 1rem;
 			width: 10rem;
 			height: 10rem;
 			transition: 0.3s ease-in;
+			color: #a3b1c6;
+			box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 16px #a3b1c6;
+			border-radius: 50%;
+			background-color: #d5d9df;
 
 			&:hover {
 				transform: scale(1.1);

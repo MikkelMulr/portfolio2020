@@ -1,17 +1,25 @@
 // @media (min-width: 480px) {
 .HomeContent {
 	width: 100%;
-	height: 55%;
+	height: 85%;
 	padding: 2rem 1rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-items: center;
 
-	&--quote {
-		padding: 0 1rem;
+	&--quote-main {
+		border-radius: 18px;
+		height: 30%;
 		width: 100%;
-		color: #fff;
+		box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+	}
+
+	&--quote {
+		padding: 1rem;
+		width: 100%;
+		border-radius: 18px;
+		color: #777;
 		animation: appear 1.5s ease-out;
 		animation-delay: 0.6s;
 	}
@@ -20,22 +28,26 @@
 		padding: 0 1rem;
 		width: 100%;
 		text-align: left;
-		color: #666;
+		color: #aaa;
 		animation: appear 1.7s ease-out;
 		animation-delay: 0.8s;
 	}
 }
 
 .words {
-	font-size: 2.1rem;
+	font-size: 1.8rem;
 	padding: 0 1rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	width: 100%;
-	height: 50%;
-	color: #fff;
+	height: 40%;
+	color: #a3b1c6;
+	box-shadow: -3px -3px 22px #fff, 8px 8px 25px #a3b1c6;
+	border-radius: 0 14px 14px 14px;
+	font-weight: bold;
+	background-color: #e0e5ec;
 
 	&--w1 {
 		text-align: left;
@@ -45,14 +57,14 @@
 
 	&--w2 {
 		text-align: center;
-		padding-top: 30px;
+		padding-top: 10px;
 		animation: appear 1.2s ease-out;
 		animation-delay: 0.2s;
 	}
 
 	&--w3 {
 		text-align: right;
-		padding-top: 60px;
+		padding-top: 70px;
 		animation: appear 1.2s ease-out;
 		animation-delay: 0.4s;
 	}
@@ -63,16 +75,25 @@
 @media (min-width: 1200px) {
 	.HomeContent {
 		width: 100%;
-		height: 55%;
+		height: 65%;
 		padding: 2rem 5rem;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: center;
 		align-items: center;
 
-		&--quote {
+		&--quote-main {
+			margin-top: 5rem;
+			border-radius: 0 14px 14px 14px;
+			height: 130px;
 			width: 40%;
-			color: #fff;
+			box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+			padding: 1.8rem;
+		}
+
+		&--quote {
+			width: 100%;
+			color: #a3b1c6;
 			animation: appear 1.5s ease-out;
 			animation-delay: 0.6s;
 			padding: 0;
@@ -81,7 +102,7 @@
 		&--quoteBy {
 			width: 40%;
 			text-align: left;
-			color: #666;
+			color: #aaa;
 			animation: appear 1.7s ease-out;
 			animation-delay: 0.8s;
 			padding: 0;
@@ -89,14 +110,17 @@
 	}
 
 	.words {
+		padding: 3rem;
 		font-size: 2.25rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
-		width: 100%;
-		height: 50%;
-		color: #fff;
+		width: 50%;
+		height: 220px;
+		color: #a3b1c6;
+		box-shadow: -3px -3px 22px #fff, 8px 8px 25px #a3b1c6;
+		border-radius: 0 14px 14px 14px;
 
 		&--w1 {
 			text-align: left;

@@ -7,10 +7,17 @@ export class Projects extends Component {
 	render() {
 		return (
 			<div className='Projects'>
-				<div className='Projects--Cards'>
-					<ProjectCard title='Project' order='one' />
-					<ProjectCard title='Project' order='two' />
-					<ProjectCard title='Project' order='three' />
+				<div className="Projects--Cards-container">
+					<div className='Projects--Cards'>
+						<ProjectCard title='Project' order='one' />
+						<ProjectCard title='Project' order='two' />
+						<ProjectCard title='Project' order='three' />
+					</div>
+					<div className='Projects--Cards'>
+						<ProjectCard title='Project' order='one' />
+						<ProjectCard title='Project' order='two' />
+						<ProjectCard title='Project' order='three' />
+					</div>
 				</div>
 			</div>
 		);

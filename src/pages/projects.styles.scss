@@ -1,11 +1,22 @@
 .Projects {
-	height: 100vh;
+	height: 100%;
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: flex-end;
-	padding: 1rem 1rem;
+	margin-top: 3rem;
+	padding: 1rem;
+
+	&--Cards-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
 
 	&--Cards {
 		height: 100%;
@@ -26,7 +37,10 @@
 		.three {
 			animation: appear 1.8s ease-out;
 		}
+
 	}
+
+
 }
 
 @media (min-width: 800px) {
@@ -38,6 +52,15 @@
 		justify-content: flex-start;
 		align-items: flex-end;
 		padding: 5rem 8rem;
+
+		&--Cards-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+		}
 
 		&--Cards {
 			height: 100%;

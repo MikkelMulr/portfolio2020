@@ -9,7 +9,11 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	transition: background-color 0.3s ease-out 0.12s, height 0.4s ease-out 0.2s;
-	box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 16px #a3b1c6;
+	// box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 16px #a3b1c6;
+	box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
+		-30px -30px 30px -10px rgba(255, 255, 255, 0.4),
+		-0.5px -0.5px 0 rgba(255, 255, 255, 1),
+		0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
 	border-radius: 14px;
 
 	&:hover {

@@ -7,11 +7,11 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-
-	overflow: hidden;
+	overflow-y: scroll;
+	// padding-top: 220px;
 
 	&--Cards-container {
-		margin-top: 220px;
+		// margin-top: 220px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -46,6 +46,10 @@
 			animation: appear 2.2s ease-out;
 		}
 	}
+}
+
+.Cards-top {
+	padding-top: 220px;
 }
 
 @media (min-width: 800px) {
@@ -96,6 +100,10 @@
 				animation: appear 2.2s ease-out;
 			}
 		}
+	}
+
+	.Cards-top {
+		padding-top: 0px;
 	}
 }
 

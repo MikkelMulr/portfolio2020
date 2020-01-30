@@ -9,22 +9,29 @@ export default function Contact() {
 		<div className='Contact'>
 			<div className='Contact--items'>
 				<div className='Contact--item item1'>
-					<a href='mailto:muellerm.dev@gmail.com?subject=portfolio contact'>
-						<img src={Email} alt='email' />
-					</a>
-					<h2>EMAIL</h2>
+					<div className="Contact--item-inner">
+						<a href='mailto:muellerm.dev@gmail.com?subject=portfolio contact'>
+							<img src={Email} alt='email' />
+						</a>
+					</div>
+					{window.innerWidth < 800 ? <h2>EMAIL</h2> : null}
+
 				</div>
 				<div className='Contact--item item2'>
-					<a href='https://github.com/MikkelMulr' target='_blank' rel='noopener noreferrer'>
-						<img src={Github} alt='github' />
-					</a>
-					<h2>GITHUB</h2>
+					<div className="Contact--item-inner">
+						<a href='https://github.com/MikkelMulr' target='_blank' rel='noopener noreferrer'>
+							<img src={Github} alt='github' />
+						</a>
+					</div>
+					{window.innerWidth < 800 ? <h2>GITHUB</h2> : null}
 				</div>
 				<div className='Contact--item item3'>
-					<a href='https://www.linkedin.com/in/michael-mueller-10a092161/' target='_blank' rel='noopener noreferrer'>
-						<img src={Linkedin} alt='linkedin' />
-					</a>
-					<h2>LINKEDIN</h2>
+					<div className="Contact--item-inner">
+						<a href='https://www.linkedin.com/in/michael-mueller-10a092161/' target='_blank' rel='noopener noreferrer'>
+							<img src={Linkedin} alt='linkedin' />
+						</a>
+					</div>
+					{window.innerWidth < 800 ? <h2>LINKEDIN</h2> : null}
 				</div>
 			</div>
 		</div>

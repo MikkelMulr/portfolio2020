@@ -7,7 +7,7 @@ export class Projects extends Component {
 		return (
 			<div className='Projects'>
 				<div className='Projects--Cards-container'>
-					<div className='Projects--Cards'>
+					<div className='Projects--Cards Cards-top'>
 						<ProjectCard title='Tymed' order='one' />
 						<ProjectCard title='Avalon Resilient' order='two' />
 						<ProjectCard title='Restaurant App' order='three' />

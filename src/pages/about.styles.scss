@@ -7,7 +7,6 @@
 	align-items: flex-start;
 	padding: 0rem 0.5rem;
 	border-radius: 14px;
-	// background-color: #e0e5ec;
 	color: #bbb;
 
 	&--container {
@@ -94,8 +93,7 @@
 			color: #fff;
 			animation: appear 1.2s ease-out;
 			border-radius: 0 14px 14px 14px;
-			// box-shadow: -3px -3px 22px #fff, 8px 8px 25px rgba(40, 79, 82, 0.3);
-			// box-shadow: -3px -3px 22px #fff, 8px 8px 25px #a3b1c6;
+
 			box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
 				-30px -30px 30px -10px rgba(255, 255, 255, 0.4),
 				-0.5px -0.5px 0 rgba(255, 255, 255, 1),
@@ -108,7 +106,6 @@
 			width: 150px;
 			height: 150px;
 			color: #a3b1c6;
-			// box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 16px #a3b1c6;
 			box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
 				-30px -30px 30px -10px rgba(255, 255, 255, 0.4),
 				-0.5px -0.5px 0 rgba(255, 255, 255, 1),
@@ -126,12 +123,10 @@
 			animation: appear 1.8s ease-out;
 			color: #76808f;
 			border-radius: 0 14px 14px 14px;
-			// box-shadow: -3px -3px 22px #fff, 8px 8px 25px rgba(40, 79, 82, 0.3);
 			box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
 				-30px -30px 30px -10px rgba(255, 255, 255, 0.4),
 				-0.5px -0.5px 0 rgba(255, 255, 255, 1),
 				0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
-			// align-self: flex-end;
 		}
 	}
 }

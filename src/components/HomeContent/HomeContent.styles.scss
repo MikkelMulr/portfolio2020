@@ -53,6 +53,7 @@
 		text-align: left;
 		padding-bottom: 50px;
 		animation: appear 1.2s ease-out;
+		text-shadow: -3px -3px 22px #fff, 8px 8px 25px #a3b1c6;
 	}
 
 	&--w2 {
@@ -111,7 +112,7 @@
 
 	.words {
 		padding: 3rem;
-		font-size: 2.25rem;
+		font-size: 1.8rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -119,7 +120,11 @@
 		width: 50%;
 		height: 220px;
 		color: #a3b1c6;
-		box-shadow: -3px -3px 22px #fff, 8px 8px 25px #a3b1c6;
+		// box-shadow: -3px -3px 22px #fff, 8px 8px 25px #a3b1c6;
+		box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
+			-30px -30px 30px -10px rgba(255, 255, 255, 0.4),
+			-0.5px -0.5px 0 rgba(255, 255, 255, 1),
+			0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
 		border-radius: 0 14px 14px 14px;
 
 		&--w1 {

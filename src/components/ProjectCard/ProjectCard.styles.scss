@@ -58,8 +58,13 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		transition: background-color 0.3s ease-out 0.12s, height 0.4s ease-out 0.2s;
-		box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 8px #a3b1c6;
+		// box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 8px #a3b1c6;
+		box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
+			-30px -30px 30px -10px rgba(255, 255, 255, 0.4),
+			-0.5px -0.5px 0 rgba(255, 255, 255, 1),
+			0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
 		border-radius: 14px;
+		// padding: 0 0.33rem;
 
 		&:hover {
 			background-color: #fff;
@@ -71,6 +76,10 @@
 			height: 310px;
 			background-color: #fff;
 			box-shadow: inset 0px 0px 0px rgba(255, 255, 255, 1), inset -1px 0px 5px #a3b1c6;
+			// box-shadow: inset 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
+			// 	inset -30px -30px 30px -10px rgba(255, 255, 255, 0.4),
+			// 	inset -0.5px -0.5px 0 rgba(255, 255, 255, 1),
+			// 	inset 0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
 			border-radius: 14px;
 		}
 

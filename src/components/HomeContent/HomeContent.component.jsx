@@ -5,9 +5,15 @@ export default function HomeContent() {
 	return (
 		<div className='HomeContent'>
 			<div className='words'>
-				<span className='words--w1'>CREATE</span>
-				<span className='words--w2'>BREAK</span>
-				<span className='words--w3'>ITERATE</span>
+				<span className='words--w1'>
+					<h2>CREATE</h2>
+				</span>
+				<span className='words--w2'>
+					<h2>BREAK</h2>
+				</span>
+				<span className='words--w3'>
+					<h2>ITERATE</h2>
+				</span>
 			</div>
 			<div className='HomeContent--quote-main'>
 				<p className='HomeContent--quote'>

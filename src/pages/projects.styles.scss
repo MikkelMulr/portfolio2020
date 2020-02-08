@@ -1,10 +1,11 @@
 .Projects {
+	flex-wrap: wrap;
 	height: 100%;
 	min-height: 100vh;
 	max-width: 100vw;
 	width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	overflow-y: scroll;
@@ -12,12 +13,17 @@
 
 	&--Cards-container {
 		// margin-top: 220px;
+		// flex-wrap: wrap;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
-		height: 80vh;
+		height: 90vh;
 		width: 100%;
+	}
+
+	&--Cards-container:first-of-type {
+		padding-top: 2rem;
 	}
 
 	&--Cards {
@@ -66,12 +72,13 @@
 		overflow: hidden;
 
 		&--Cards-container {
+			flex-wrap: nowrap;
 			margin-top: 50px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			height: 80vh;
+			height: 80%;
 			width: calc(100vw - 300px);
 		}
 

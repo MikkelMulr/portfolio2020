@@ -7,14 +7,12 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	transition: background-color 0.3s ease-out 0.12s, height 0.4s ease-out 0.2s;
-	box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
-		-30px -30px 30px -10px rgba(255, 255, 255, 0.4),
-		-0.5px -0.5px 0 rgba(255, 255, 255, 1),
-		0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
+	box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1), -30px -30px 30px -10px rgba(255, 255, 255, 0.4),
+		-0.5px -0.5px 0 rgba(255, 255, 255, 1), 0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
 	border-radius: 14px;
 
 	&:hover {
-		height: 12rem;
+		height: 15rem;
 		z-index: 100000;
 		background-color: #fff;
 		box-shadow: -3px -3px 22px #fff, 8px 8px 25px #a3b1c6;
@@ -33,7 +31,6 @@
 				display: inline;
 				opacity: 1;
 				animation: appear-icons 0.8s linear;
-
 			}
 		}
 	}
@@ -71,10 +68,9 @@
 		}
 	}
 
-
-
 	&--details--icons {
 		display: flex;
+		width: 80%;
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
@@ -82,7 +78,7 @@
 		position: absolute;
 
 		i {
-			font-size: 0.85rem;
+			font-size: 2rem;
 			color: none;
 			display: none;
 			opacity: 0;
@@ -101,12 +97,9 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		transition: background-color 0.3s ease-out 0.12s, height 0.4s ease-out 0.2s;
-		box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
-			-30px -30px 30px -10px rgba(255, 255, 255, 0.4),
-			-0.5px -0.5px 0 rgba(255, 255, 255, 1),
-			0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
+		box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1), -30px -30px 30px -10px rgba(255, 255, 255, 0.4),
+			-0.5px -0.5px 0 rgba(255, 255, 255, 1), 0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
 		border-radius: 14px;
-
 
 		&:hover {
 			background-color: #fff;
@@ -159,6 +152,7 @@
 		}
 
 		&--details--icons {
+			max-width: 220px;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
@@ -176,7 +170,6 @@
 		}
 	}
 }
-
 
 @keyframes appear-icons {
 	0% {

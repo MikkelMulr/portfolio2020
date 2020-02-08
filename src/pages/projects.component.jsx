@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ProjectCard from '../components/ProjectCard/ProjectCard.component';
 import Tymed from '../assets/images/tymed.png';
 import Avalon from '../assets/images/avalon.png';
+import Ovbg from '../assets/images/ovbg.png';
 import './projects.styles.scss';
 
 export class Projects extends Component {
@@ -21,15 +22,18 @@ export class Projects extends Component {
 							order='two'
 							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
 							bg={Avalon}
-						/>
-						<ProjectCard
-							title='Restaurant App'
-							order='three'
-							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
+							linkTo='https://www.avalonresilient.com'
 						/>
 						<ProjectCard
 							title='OVBG PathFinder'
 							order='four'
+							langs={[ 'html5', 'css3', 'nodejs', 'javascript' ]}
+							bg={Ovbg}
+							linkTo='https://ovbg2019.github.io/ovbgapp/'
+						/>
+						<ProjectCard
+							title='Restaurant App'
+							order='three'
 							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
 						/>
 					</div>
@@ -40,9 +44,9 @@ export class Projects extends Component {
 							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
 						/>
 						<ProjectCard
-							title='LakeRidge CT Myths'
+							title='SubTracks'
 							order='two'
-							langs={[ 'vuejs', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
+							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
 						/>
 						<ProjectCard
 							title='Project TBD'

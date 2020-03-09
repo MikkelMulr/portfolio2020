@@ -3,6 +3,8 @@ import ProjectCard from '../components/ProjectCard/ProjectCard.component';
 import Tymed from '../assets/images/tymed.png';
 import Avalon from '../assets/images/avalon.png';
 import Ovbg from '../assets/images/ovbg.png';
+import restApp from '../assets/images/restapp.PNG';
+import neverDusty from '../assets/images/neverdusty.PNG';
 import './projects.styles.scss';
 
 export class Projects extends Component {
@@ -34,7 +36,9 @@ export class Projects extends Component {
 						<ProjectCard
 							title='Restaurant App'
 							order='three'
-							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
+							langs={[ 'react', 'html5', 'css3', 'jquery', 'javascript' ]}
+							bg={restApp}
+							linkTo='https://mikkelmulr.github.io/restApp/'
 						/>
 					</div>
 					<div className='Projects--Cards'>
@@ -49,12 +53,14 @@ export class Projects extends Component {
 							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
 						/>
 						<ProjectCard
-							title='Project TBD'
+							title='NeverDusty Games'
 							order='three'
 							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
+							bg={neverDusty}
+							linkTo='https://github.com/MikkelMulr/ND_GameLib'
 						/>
 						<ProjectCard
-							title='Project TBD'
+							title='LakeRidge Health Clinical Trials'
 							order='four'
 							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
 						/>

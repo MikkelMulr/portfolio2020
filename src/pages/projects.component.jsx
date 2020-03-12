@@ -5,6 +5,8 @@ import Avalon from '../assets/images/avalon.png';
 import Ovbg from '../assets/images/ovbg.png';
 import restApp from '../assets/images/restapp.PNG';
 import neverDusty from '../assets/images/neverdusty.PNG';
+import covidbg from '../assets/images/covidbg.PNG';
+import lakebg from '../assets/images/lakebg.PNG';
 import './projects.styles.scss';
 
 export class Projects extends Component {
@@ -16,27 +18,27 @@ export class Projects extends Component {
 						<ProjectCard
 							title='Tymed'
 							order='one'
-							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
+							langs={['react', 'html5', 'css3', 'sass', 'nodejs', 'javascript']}
 							bg={Tymed}
 						/>
 						<ProjectCard
 							title='Avalon Resilient'
 							order='two'
-							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
+							langs={['react', 'html5', 'css3', 'sass', 'nodejs', 'javascript']}
 							bg={Avalon}
 							linkTo='https://www.avalonresilient.com'
 						/>
 						<ProjectCard
 							title='OVBG PathFinder'
 							order='four'
-							langs={[ 'html5', 'css3', 'nodejs', 'javascript' ]}
+							langs={['html5', 'css3', 'nodejs', 'javascript']}
 							bg={Ovbg}
 							linkTo='https://ovbg2019.github.io/ovbgapp/'
 						/>
 						<ProjectCard
 							title='Restaurant App'
 							order='three'
-							langs={[ 'react', 'html5', 'css3', 'jquery', 'javascript' ]}
+							langs={['react', 'html5', 'css3', 'jquery', 'javascript']}
 							bg={restApp}
 							linkTo='https://mikkelmulr.github.io/restApp/'
 						/>
@@ -45,24 +47,27 @@ export class Projects extends Component {
 						<ProjectCard
 							title='OB Tracker'
 							order='one'
-							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
+							langs={['react', 'html5', 'css3', 'sass', 'nodejs', 'javascript']}
+							linkTo='https://mikkelmulr.github.io/corvir_map/'
+							bg={covidbg}
 						/>
 						<ProjectCard
 							title='SubTracks'
 							order='two'
-							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
+							langs={['react', 'html5', 'css3', 'sass', 'nodejs', 'javascript']}
 						/>
 						<ProjectCard
 							title='NeverDusty Games'
 							order='three'
-							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
+							langs={['react', 'html5', 'css3', 'sass', 'nodejs', 'javascript']}
 							bg={neverDusty}
 							linkTo='https://github.com/MikkelMulr/ND_GameLib'
 						/>
 						<ProjectCard
 							title='LakeRidge Health Clinical Trials'
 							order='four'
-							langs={[ 'react', 'html5', 'css3', 'sass', 'nodejs', 'javascript' ]}
+							langs={['vuejs', 'html5', 'css3', 'nodejs', 'javascript']}
+							bg={lakebg}
 						/>
 					</div>
 				</div>
